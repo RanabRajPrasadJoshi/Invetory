@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $res1 = mysqli_query($conn, $qry1);
 
     // Handle the result
-    if (!$res) {
+    if (!$res1) {
         // Display error if the query fails
         echo "Error: " . mysqli_error($conn);
     } else {
