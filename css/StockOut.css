@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Merged Navbar */
+.merged-navbar {
+    background-color: #212529;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Added padding for better responsiveness */
+}
+
+.brand h1 {
+    margin: 0; /* Changed margin to 0 */
+    font-size: 24px;
+}
+
+.user {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.avatar {
+    margin-right: 10px; /* Add some space between avatar and username */
+}
+
+.log {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.avatar img {
+    width: 60px; /* Increase the width of the image inside the avatar */
+    height: 35px; /* Increase the height of the image inside the avatar */
+}
+
+
+.info button {
+    background-color: #dc3545; /* Red color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 8px 22px; /* Increase button padding */
+    border-radius: 8px; /* Increase button border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px; /* Increase font size of the button */
+}
+
+.info button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #495057; /* Dark gray background on hover */
+    color: #fff; /* White text color on hover */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Form styles */
+.item-add {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.item-add h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.item-add label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.item-add input[type="text"],
+.item-add input[type="number"],
+.item-add input[type="date"],
+.item-add select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+
+.item-add button {
+    width: calc(30% - 4px);
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 8px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.item-add button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.item-add button:hover {
+    background-color: #c82333;
+}
+
+.item-add button:last-child {
+    margin-right: 0;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user {
+        margin-top: 10px;
+    }
+
+    .item-add {
+        max-width: 90%;
+    }
+
+    .item-add button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .user {
+        margin-top: 10px; /* Add margin to user section */
+    }
+
+    
+}
+@media only screen and (max-width: 352px) {
+    .container {
+        max-width: 300px; /* Increase the max-width of the container */
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .user {
+        margin-top: 10px; /* Add margin to user section */
+    }
+
+}

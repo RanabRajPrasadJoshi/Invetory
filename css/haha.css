@@ -1,0 +1,120 @@
+For screens smaller than 768px
+@media screen and (max-width: 768px) {
+    .sidebar{
+        width: 150px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand h1 {
+        margin-right: 3em; /* Reset margin for the brand */
+        margin-bottom: 10px; /* Add margin at the bottom for better spacing */
+        text-align: center; /* Center the text */
+    }
+    .user {
+        flex-direction: column; /* Arrange user elements vertically */
+        align-items: center; /* Center user elements */
+    }
+    .avatar {
+        margin-right: 0; /* Reset margin for the avatar */
+        margin-bottom: 10px; /* Add margin at the bottom for better spacing */
+    }
+    .log {
+        width: 60px; /* Adjust width of the avatar image */
+        height: 60px; /* Adjust height of the avatar image */
+        margin-left: 7em;
+    }
+    .username {
+        margin-right: 0; /* Reset margin for the username */
+    }
+    .info button {
+        padding: 10px 30px; /* Increase button padding */
+        font-size: 16px; /* Increase font size of the button */
+    }
+    .box-container {
+        margin-right: 12em; /* Reset margin */
+        padding-top: 20px; /* Adjust padding at the top */
+        justify-content: space-around; /* Center horizontally */
+    }
+    .box {
+    
+        width: 45%; /* Adjust width of the boxes */
+        margin: 10px 0; /* Adjust margin for the boxes */
+        margin-left: 10em;
+    }
+    .info{
+        margin-left: 9em;
+    }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    .sidebar{
+        width: 120px;
+    }
+    .avatar img {
+        width: 40px; /* Further decrease the width of the avatar image */
+        height: 25px; /* Further decrease the height of the avatar image */
+    }
+    .info button {
+        padding: 8px 20px; /* Further reduce button padding */
+        font-size: 14px; /* Further reduce font size of the button */
+    }
+    .box {
+        width: 38%; /* Further decrease the width of the boxes */
+    }
+}
+@media screen and (max-width: 1298px) {
+    .brand h1 {
+        margin-left: 8em; /* Reset margin for the brand */
+        margin-bottom: 10px; /* Add margin at the bottom for better spacing */
+        text-align: center; /* Center the text */
+    }
+}
+@media screen and (max-width: 1000px) {
+    .box-container {
+        margin-left: 1em;
+    }
+}
+@media screen and (max-width: 1227px) {
+    .box-container {
+        margin-left: 11em;
+    }
+}
+@media screen and (max-width: 496px) {
+    .sidebar{
+        width: 110px;
+    }
+    .brand h1 {
+        margin-left: 9em; /* Reset margin for the brand */
+        font-size: 20px;
+        margin-bottom: 10px; /* Add margin at the bottom for better spacing */
+        text-align: center; /* Center the text */
+    }
+    .box-container {
+        width: 80%;
+    margin-left: 4em;
+    padding-top: 10px;/
+    }
+    .box {
+    
+        width: 30%; /* Adjust width of the boxes */
+        margin: 10px 0; /* Adjust margin for the boxes */
+        margin-left: 10em;
+    }
+    .info{
+        margin-left: 9em;
+    }
+}
+@media screen and (max-width: 320px) {
+    .sidebar{
+        width: 100px;
+    }
+    .box-container {
+        width: 80%;
+    margin-left: 3em;
+    padding-top: 10px;
+    }
+    
+} */

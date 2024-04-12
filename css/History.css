@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Merged Navbar */
+.merged-navbar {
+    background-color: #212529;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Added padding for better responsiveness */
+}
+
+.brand h1 {
+    margin: 0; /* Changed margin to 0 */
+    font-size: 24px;
+}
+
+.user {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.avatar {
+    margin-right: 10px; /* Add some space between avatar and username */
+}
+
+.log {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.avatar img {
+    width: 60px; /* Increase the width of the image inside the avatar */
+    height: 35px; /* Increase the height of the image inside the avatar */
+}
+
+.info button {
+    background-color: #dc3545; /* Red color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 8px 22px; /* Increase button padding */
+    border-radius: 8px; /* Increase button border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px; /* Increase font size of the button */
+}
+
+.info button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #495057; /* Dark gray background on hover */
+    color: #fff; /* White text color on hover */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Item list and table styling */
+.item-list {
+    padding: 20px;
+}
+
+.itemls {
+    text-align: center;
+    font-size: 20px;
+}
+
+.resetBtn {
+    text-align: end;
+    margin-right: 8%;
+}
+
+.reset-button {
+    padding: 8px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+}
+
+/* Table styling */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    width: 100%; /* Adjust the width of the container */
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Custom dropdown menu styles */
+.filter-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-button.active {
+    background-color: rgb(230, 230, 230); /* Change background color to gray */
+    border: 1px solid lime; /* Set border thickness to 1px */
+    border-radius: 3px;
+    font-weight: bold; /* Make the placeholder bold when active */
+}
+
+.filter-button {
+    font-weight: normal;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .user {
+        margin-top: 10px; /* Add margin to user section */
+    }
+
+    /* Table adjustments for smaller screens */
+    #itemTable {
+        width: 100%;
+        display: block; /* Change table layout */
+    }
+
+    #itemTable thead {
+        display: none; /* Hide table headers */
+    }
+
+    #itemTable tr {
+        display: block; /* Make each row a block */
+        margin-bottom: 10px;
+    }
+
+    #itemTable td {
+        display: block;
+        width: 100%;
+        text-align: right; /* Adjust text alignment */
+        padding-left: 50%; /* Adjust padding */
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #itemTable td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        text-align: left;
+    }
+}
